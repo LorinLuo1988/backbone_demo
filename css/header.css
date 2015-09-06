@@ -1,0 +1,40 @@
+body>header {
+
+}
+body>header nav ul {
+	list-style-type: none;
+	background-color: #000000;
+	text-align: center;
+}
+body>header nav ul li {
+	display: inline-block;
+}
+body>header nav ul li.active {
+	font-weight: 700;
+	background-color: #ff3440;
+	border-radius: 5px;
+}
+body>header nav ul li a {
+	color: #ffffff;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+body>header nav ul li a:link {
+	text-decoration: none;
+	color: #ffffff;
+}
+body>header nav ul li a:visited {
+	text-decoration: none;
+	color: #ffffff;
+}
+body>header nav ul li a:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+body>header nav ul li a:active {
+	text-decoration: none;
+	color: #ffffff;
+}

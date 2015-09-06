@@ -1,0 +1,24 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "express": "^3.21.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-handlebars": "^0.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lorin19881101"
+  },
+  "keywords": [
+    "lorin19881101"
+  ],
+  "author": "lorin",
+  "license": "ISC"
+}
