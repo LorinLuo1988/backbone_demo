@@ -9,6 +9,7 @@ require.config({
 		json2: '../lib/json2',
 		handlebars: '../lib/handlebars-v3.0.0',
 		underscore: '../lib/underscore',
+		bootstrap: '../lib/bootstrap.min',
 		main: './main',
 		routers: './routers/main'
 	},
@@ -21,6 +22,9 @@ require.config({
 		underscore: {
 			deps: [],
 			exports: "_"
+		},
+		bootstrap: {
+			deps: ['jquery']
 		}
 	}
 });

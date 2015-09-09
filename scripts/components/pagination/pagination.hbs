@@ -1,0 +1,19 @@
+<nav>
+    <ul class="pagination" style="margin: 5px 0px 0px 5px;">
+		{{#if this.pageNumber.length}}
+			<li class="prev-page">
+				<a aria-label="Previous">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>
+            {{#each this.pageNumber}}
+				<li class="fix-page"><a>{{inc @index}}</a></li>
+            {{/each}}
+			<li class="next-page">
+				<a aria-label="Next">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+        {{/if}}
+    </ul>
+</nav>

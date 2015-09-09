@@ -1,5 +1,48 @@
-<div class="container">
+<div class="container contact">
     <div class="row">
-        contact
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h4>
+					通讯录
+                </h4>
+            </div>
+            <div class="panel-body">
+				<form class="form-horizontal" onsubmit="return false;">
+                    <div class="form-group contact-control">
+                        <div class="col-sm-2 col-xs-4 col-md-1 col-lg-1">
+                            <div class="checkbox">
+								<label for="selectAll">
+									<input type="checkbox" id="selectAll"/>
+                                    全选
+                                </label>
+                            </div>
+                        </div>
+						<div class="col-sm-4 col-xs-3 col-md-2 col-lg-2">
+							<div class="btn-group">
+								<div class="btn-group sort" role="group">
+									<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										排序
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li class="sort-by" sortBy="name"><a href="#contact">姓名</a></li>
+										<li class="sort-by" sortBy="phone"><a href="#contact">号码</a></li>
+									</ul>
+								</div>
+                            </div>
+						</div>
+						<div class="col-sm-5 col-xs-5 col-md-5 col-lg-5">
+							<div class="btn-group">
+								<button class="btn btn-default addContact">增加</button>
+								<button class="btn btn-danger deleteContact">删除</button>
+							</div>
+						</div>
+                    </div>
+                </form>
+            </div>
+            <ul class="list-group contact-list">
+
+            </ul>
+        </div>
     </div>
 </div>

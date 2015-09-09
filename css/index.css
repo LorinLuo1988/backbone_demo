@@ -1,12 +1,17 @@
 @import "header.css";
+@import "contact.css";
 
 
 * {
 	margin: 0;
 	padding: 0;
+	outline: none;
 }
 .clear-fix:after {
 	display: block;
 	content: '';
 	clear: both;
+}
+.pagination a:hover {
+	cursor: pointer;
 }

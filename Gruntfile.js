@@ -16,7 +16,9 @@ module.exports = function (grunt) {
 					'scripts/account/templates/main.js' : [ 'scripts/account/templates/*.hbs'],
 					'scripts/calculate/templates/main.js' : [ 'scripts/calculate/templates/*.hbs'],
 					'scripts/contact/templates/main.js' : [ 'scripts/contact/templates/*.hbs'],
-					'scripts/memo/templates/main.js' : [ 'scripts/memo/templates/*.hbs']
+					'scripts/memo/templates/main.js' : [ 'scripts/memo/templates/*.hbs'],
+					'scripts/components/modal/main.js' : [ 'scripts/components/modal/*.hbs'],
+					'scripts/components/pagination/main.js' : [ 'scripts/components/pagination/*.hbs']
 				}
 			}
 		}

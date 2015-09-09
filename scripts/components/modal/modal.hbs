@@ -1,0 +1,106 @@
+<div id="myModal" class="modal fade" role="dialog" aria-labelledby="gridSystemModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title text-muted" id="gridSystemModalLabel">{{this.title}}</h4>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+                        {{#if this.nullDeleteModal}}
+						<div class="col-md-12">
+							<p class="text-danger">{{this.tip}}</p>
+						</div>
+                        {{/if}}
+                        {{#if this.fillDeleteModal}}
+							<div class="col-md-12">
+								<p class="text-danger">{{this.tip}}</p>
+							</div>
+                        {{/if}}
+                        {{#if this.addContact}}
+							<div class="col-md-12">
+								<form class="form-horizontal" role="form">
+                                    <div class="form-group">
+										<label for="" class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2">姓名:</label>
+                                        <div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
+											<input type="text" class="form-control contact-name" placeholder="姓名" required/>
+                                        </div>
+                                    </div>
+									<div class="form-group">
+										<label for="" class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2">号码:</label>
+										<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
+											<input type="number" class="form-control contact-phone" placeholder="号码" required/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2"></label>
+										<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
+											<div id="alert" class="alert alert-danger alert-dismissible fade in" role="alert">
+												<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+												<strong>Error!</strong> 请输入完整的姓名和电话号码.
+											</div>
+											<div id="nameExistAlert" class="alert alert-danger alert-dismissible fade in" role="alert">
+												<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+												<strong>Error!</strong> 联系人已存在, 请重新输入.
+											</div>
+										</div>
+									</div>
+                                </form>
+							</div>
+                        {{/if}}
+                        {{#if this.editContact}}
+							<div class="col-md-12">
+								<form class="form-horizontal" role="form">
+									<div class="form-group">
+										<label for="" class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2">姓名:</label>
+										<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
+											<input type="text" value="{{this.name}}" class="form-control contact-name" placeholder="姓名" required/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2">号码:</label>
+										<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
+											<input type="number" value="{{this.phone}}" class="form-control contact-phone" placeholder="号码" required/>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="control-label col-xs-4 col-sm-2 col-md-2 col-lg-2"></label>
+										<div class="col-xs-8 col-sm-10 col-md-10 col-lg-10">
+											<div id="alert" class="alert alert-danger alert-dismissible fade in" role="alert">
+												<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+												<strong>Error!</strong> 请输入完整的姓名和电话号码.
+											</div>
+											<div id="nameExistAlert" class="alert alert-danger alert-dismissible fade in" role="alert">
+												<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+												<strong>Error!</strong> 联系人已存在, 请重新输入.
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+                        {{/if}}
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+                {{#if this.nullDeleteModal}}
+					<button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal">确定</button>
+                {{/if}}
+                {{#if this.fillDeleteModal}}
+					<button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-success delete-contact-success" data-dismiss="modal">确定</button>
+                {{/if}}
+                {{#if this.addContact}}
+					<button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-success add-contact-success">确定</button>
+                {{/if}}
+                {{#if this.editContact}}
+					<button type="button" class="btn btn-danger" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-success edit-contact-success">确定</button>
+                {{/if}}
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
